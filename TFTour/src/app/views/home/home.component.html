@@ -1,0 +1,267 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div id="carrossel" class="carrossel">
+    <img src="assets/img/bannerone.png" alt="banner dupla">
+    <img src="assets/img/bannertwo.png" alt="banner solo">
+    <img src="assets/img/bannerthree.png" alt="banner ao vivo">
+
+  </div>
+  <div class="carrossel">
+    <div class="container-fluid p-0 m-0">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/img/banner.png" alt="Slide1" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="assets/img/slide-topo-2.png" alt="Slide2" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="assets/img/slide-topo-3.png" alt="Slide3" style="width:100%;">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+</div>
+<section class="secao-inscricao">
+<div class="texto-inscricao container-grid ">
+  <a href="#" style="text-decoration:none">Inscreva-se</a>
+</div>
+</section>
+<section class="sobre-torneio">
+  <div class="conteudo-sobre container-grid">
+    <div class="row">
+      <div class="texto-sobre col">
+        <h1>Sobre os Torneios</h1>
+    <p> Os torneios são de elo único, porém, será permitido a participação de jogadores com até UM elo de diferença para CIMA/BAIXO dentro do mesmo time. Obrigatoriamente tem que haver um jogador do elo do torneio no time! Ou seja, cada time precisa ter PELO MENOS 1 jogador com o elo do torneio! Os outros 4 jogadores podem ser jogadores com 1 elo abaixo, com o elo do torneio ou com 1 elo acima - O importante é ter pelo menos 1 jogador com o elo do torneio, o resto não importa se são do elo do torneio ou um elo a mais/menos<b>.<br>EXEMPLOS DE ESCALAÇÕES PARA O TORNEIO OURO:<br>  EX1: 1 Prata, 3 Ouros e 1 Platina<br> EX2: 3 Pratas, 1 Ouro e 1 Platina<br> EX3: 1 Ouro e 4 Platina</b>...
+      <a href="" style="text-decoration:none">Leia mais</a></p>
+      </div>
+    <div class="container-imagem col">
+      <img src="assets/img/logo-sobre.png" alt="sobre">
+    </div>
+    </div>
+  </div>
+</section>
+<section class="secao-partidas">
+  <div class="partidas container-grid">
+      <div class="games-aovivo">
+        <h2>Ao Vivo</h2>
+        <a href="" style="text-decoration:none"><div class="partida">
+          <div class="time1">
+            <p>SGB</p>
+            <img src="assets/img/sgb.png" alt="SGB">
+          </div>
+          <p>X</p>
+          <div class="time2">
+            <img src="assets/img/kabum.png" alt="KBM">
+            <p>KBM</p>
+          </div>
+        </div></a>
+      </div>
+
+      <div class="games-embreve">
+        <h2>Ainda<br>Hoje</h2>
+        <a href="" style="text-decoration:none"><div class="partida">
+          <div class="time1">
+            <p>INTZ</p>
+            <img src="assets/img/intz.png" alt="INTZ">
+          </div>
+          <p>X</p>
+          <div class="time2">
+            <img src="assets/img/rc.png" alt="RC">
+            <p>RC</p>
+          </div>
+        </div></a>
+
+        <a href="" style="text-decoration:none"><div class="partida time-2">
+          <div class="time1">
+            <p>AZE</p>
+            <img src="assets/img/aze.png" alt="AZE">
+          </div>
+          <p>X</p>
+          <div class="time2">
+            <img src="assets/img/eg.png" alt="EG">
+            <p>EG</p>
+          </div>
+        </div></a>
+        </div>
+    </div>
+</section>
+<section class="secao-noticias">
+    <div class="container-grid">
+      <div class="bloco-noticias">
+        <h2>Notícias</h2>
+        <div class="content-news">
+        <div class="vods">
+          <h2 class="nomesub">Vods de partidas recentes</h2>
+        <div id="espaco-vods">
+          <div *ngFor="let noticia of listaNoticias" class="cardnews">
+            <img [src]=noticia.imagem alt="cardnew">
+            <h3>{{ noticia.titulo }}</h3>
+            <p>{{ noticia.descricao }}</p>
+          </div>
+        <!-- <div class="cardnews">
+          <img src="assets/img/noticias.png" alt="cardnew">
+          <h3>Título da Notícia</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div>
+        <div class="cardnews">
+          <img src="assets/img/noticias.png" alt="cardnew">
+          <h3>Título da Notícia</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div>
+        <div class="cardnews">
+          <img src="assets/img/noticias.png" alt="cardnew">
+          <h3>Título da Notícia</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div> -->
+        </div>
+        </div>
+      <div class="ultimas-noticias">
+      <h2 class="nomesub">Últimas Notícias</h2>
+      <div id="espaco-noticias" >
+        <div *ngFor="let noticia of listaNoticias" class="cardnews">
+          <img [src]=noticia.imagem alt="cardnew">
+          <h3>{{ noticia.titulo }}</h3>
+          <p>{{ noticia.descricao }}</p>
+        </div>
+        <!-- <h2 class="nomesub">Últimas Notícias</h2> -->
+      <!-- <div class="cardnews">
+        <img src="assets/img/noticias.png" alt="cardnew">
+        <h2>Título da Notícia</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div>
+      <div class="cardnews">
+        <img src="assets/img/noticias.png" alt="cardnew">
+        <h3>Título da Notícia</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div>
+      <div class="cardnews">
+        <img src="assets/img/noticias.png" alt="cardnew">
+        <h3>Título da Notícia</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div> -->
+    </div>
+    </div>
+    </div>
+      </div>
+    <aside class="next-games">
+      <h2>Próximas Partidas</h2>
+      <div class="next-games-bg">
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="assets/img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="assets/img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+      </div>
+    </aside>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

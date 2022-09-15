@@ -1,0 +1,111 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: black;
+}
+
+footer h2{
+    color: white;
+    font-size: 25px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.redes-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer{
+    width: 200px;
+    margin-top: 5px;  
+}
+
+.redes a{
+    display: inline-block;
+}
+.redes h2{
+    margin-left: 25px;
+}
+
+.patrocinadores a{
+    margin-right: 20px;
+    width: 10%;
+}
+
+.newsletter h2{
+    font-size: 15px;
+}
+
+.newsletter form{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.newsletter input[type="email"]{
+    height: 35px;
+    width: 195px;
+    border: none;
+}
+
+.newsletter input[type="email"]::placeholder{
+    color: rgb(211, 208, 208);
+    font-weight: bold;
+}
+
+.botao-cadastrar{
+    background-color: blueviolet;
+    width: 150px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    height: 35px;
+}
+
+@media screen and (max-width: 1200px){
+    .links{
+        width: 150px;
+    }
+
+    .redes-logo{
+        width: 200px;
+    }
+
+    .patro-new{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .redes-logo{
+        align-items: center;
+    }
+    
+    .newsletter h2{
+        text-align: center;
+    }
+    
+    .patrocinadores a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .patrocinadores h2{
+        text-align: center;
+    }
+    
+    .links{
+        display: none;
+    }
+}

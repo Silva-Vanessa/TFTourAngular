@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
+:root{
+    
+    --background: #000000;
+    --bgnews:  #191818;
+    --yellow:  #9F7C00;
+    --violet: blueviolet;
+    --gradient: linear-gradient(180deg, rgb(22, 22, 21) 0%, #000000 100%);
+    --font: 'Cantora One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

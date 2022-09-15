@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "email": "email@email.com",
+      "password": "123456",
+      "nome": "Email",
+      "id": 1
+    },
+    {
+      "email": "pessoa@email.com",
+      "password": "123456",
+      "nome": "Pessoa",
+      "id": 2
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "imagem": "assets/img/noticias.png",
+      "titulo": "Olá",
+      "descricao": "Tudo bem?"
+    },
+    {
+      "id": 2,
+      "imagem": "assets/img/noticias.png",
+      "titulo": "Olá",
+      "descricao": "Tudo bem?"
+    },
+    {
+      "id": 3,
+      "imagem": "assets/img/noticias.png",
+      "titulo": "Olá",
+      "descricao": "Tudo bem?"
+    },
+    {
+      "id": 4,
+      "imagem": "assets/img/noticias.png",
+      "titulo": "Olá",
+      "descricao": "Tudo bem?"
+    },
+    {
+      "id": 5,
+      "imagem": "assets/img/noticias.png",
+      "titulo": "Olá",
+      "descricao": "Tudo bem?"
+    },
+    {
+      "id": 6,
+      "imagem": "assets/img/noticias.png",
+      "titulo": "Olá",
+      "descricao": "Tudo bem?"
+    }
+  ]
+}

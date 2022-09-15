@@ -1,0 +1,81 @@
+header{
+    height: 80px;
+    background-color: black;
+    /*position: fixed;
+    width: 100%;*/
+}
+
+.posicionamento-header{
+    position: relative;
+}
+
+.logo{
+    width: 250px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 25px;
+}
+
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content:space-between;
+    z-index : 99;
+    
+}
+
+.barras{
+    width: 35px;
+    display: none;
+    
+}
+
+@media screen and (max-width: 1200px){
+    .container-grid{
+        width: 80%;
+    }
+
+    .barras{
+        display: inline-block;
+    }
+
+    #menu{
+        text-align: center;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        right: 65px;
+        top: 0;
+        background-color: #191818 ;
+    }
+
+    .menu a{
+        padding: 35px;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .posicionamento-header{
+        position: relative;
+    }
+
+    .logo{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .barras{
+        display: inline-block;
+        }
+    }
