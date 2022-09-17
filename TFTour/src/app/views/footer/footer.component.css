@@ -77,13 +77,15 @@ footer h2{
     }
 
     .patro-new{
-        width: 200px;
+        width: 300px;
     }
+    
 }
 @media screen and (max-width: 768px){
     .footer-mobile{
         display: flex;
         flex-direction: column;
+
     }
     
     .redes-logo{
